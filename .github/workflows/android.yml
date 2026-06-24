@@ -20,11 +20,10 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Generate and configure Gradle Wrapper
+    - name: Download Gradle Wrapper
       run: |
-        if [ ! -f gradlew ]; then
-          gradle wrapper
-        fi
+        curl -sL https://raw.githubusercontent.com/gradle/gradle/v8.4.0/gradlew -o gradlew
+        curl -sL https://raw.githubusercontent.com/gradle/gradle/v8.4.0/gradlew.bat -o gradlew.bat
         chmod +x gradlew
 
     - name: Build with Gradle
