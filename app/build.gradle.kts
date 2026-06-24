@@ -55,6 +55,23 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+        jniLibs {
+            pickFirsts.add("**/libavcodec.so")
+            pickFirsts.add("**/libavdevice.so")
+            pickFirsts.add("**/libavfilter.so")
+            pickFirsts.add("**/libavformat.so")
+            pickFirsts.add("**/libavutil.so")
+            pickFirsts.add("**/libswresample.so")
+            pickFirsts.add("**/libswscale.so")
+            pickFirsts.add("**/libcrypto.so")
+            pickFirsts.add("**/libssl.so")
+        }
+    }
 }
 
 dependencies {
