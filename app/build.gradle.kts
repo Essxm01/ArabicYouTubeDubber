@@ -71,7 +71,7 @@ dependencies {
     implementation("androidx.media3:media3-ui:1.4.0")
 
     // FFmpeg Kit
-    implementation("com.arthenica:ffmpeg-kit-full:6.0")
+    implementation("com.mrljdx:ffmpeg-kit-full:6.1.4")
 
     // Youtube-DL wrapper for Android
     implementation("io.github.junkfood02.youtubedl-android:library:0.18.1")
