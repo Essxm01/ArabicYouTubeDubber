@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ArabicYouTubeDubber</string>
+    <string name="youtube_hint">الصق رابط يوتيوب هنا</string>
+    <string name="btn_start_dubbing">ابدأ الدبلجة</string>
+    <string name="status_loading">جاري التحميل...</string>
+    <string name="error_invalid_url">الرجاء إدخال رابط يوتيوب صحيح</string>
+    <string name="status_downloading">جاري تحميل الفيديو من يوتيوب...</string>
+    <string name="status_playing">جاري تشغيل الفيديو الأصلي...</string>
+</resources>
